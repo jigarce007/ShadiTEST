@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="400dp"
+android:layout_height="500dp"
+android:layout_marginBottom="50dp"
+android:orientation="vertical">
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/msg_window"
+        android:layout_below="@+id/profileImageView"
+        android:text="@string/greet"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+        <TextView
+            android:layout_below="@+id/tv_label"
+            android:id="@+id/nameAgeTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/nameAgeTxt"
+        android:gravity="center|left"
+        android:paddingLeft="20dp">
+        <TextView
+            android:id="@+id/tv_ageheit"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/locationNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</FrameLayout>

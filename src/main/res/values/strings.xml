@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ShaadiTest</string>
+    <string name="member_wait">10 Members are eagerly awaiting your reply.Respond Now</string>
+    <string name="greet">Hey,Your profile seems interesting...</string>
+
+</resources>
